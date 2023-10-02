@@ -4,7 +4,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
   entry: './src/pages/index',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     publicPath: `${process.env.BASE_URL}/`,
     clean: true,
   },
@@ -37,7 +37,7 @@ module.exports = {
       patterns: [
         {
           from: path.resolve(__dirname, 'public', 'assets'),
-          to: path.resolve(__dirname, 'dist', 'public', 'assets'),
+          to: path.resolve(__dirname, 'docs', 'public', 'assets'),
         },
       ],
     }),

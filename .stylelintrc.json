@@ -1,4 +1,4 @@
 {
   "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
-  "ignoreFiles": [".git/**", "dist/**", "**/node_modules/**"]
+  "ignoreFiles": [".git/**", "docs/**", "**/node_modules/**"]
 }
