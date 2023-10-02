@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/pages/index',
   output: {
     path: path.resolve(__dirname, 'docs'),
-    publicPath: `${process.env.BASE_URL}/`,
+    // publicPath: `${process.env.BASE_URL}/`,
     clean: true,
   },
   resolve: {
