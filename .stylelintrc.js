@@ -18,5 +18,7 @@ module.exports = {
     "block-closing-brace-newline-after": "always", // 닫는 중괄호 뒤
     "block-closing-brace-newline-before": "always", // 닫는 중괄호 앞
     "block-opening-brace-space-before": "always", // 여는 중괄호 앞
+    "indentation":2,
+    "scss/double-slash-comment-whitespace-inside":false
   },
 }

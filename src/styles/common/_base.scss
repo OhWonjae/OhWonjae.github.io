@@ -1,0 +1,31 @@
+@import '../variables/color';
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family:'BareunDotumPro1', sans-serif;
+  font-size: 10px;
+  height:100%;
+  letter-spacing: 0;
+  line-height: 1.15;
+  min-width:1280px;
+
+}
+
+@font-face {
+  font-family: "BareunBatangPro1";
+  font-weight: normal;
+  src:    local('BareunBatangPro1'),
+    url("public/assets/fonts/BareunBatangPro1.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BareunDotumPro1" ;
+  font-weight: normal;
+  src:    local('BareunBatangPro1'),
+    url("public/assets/fonts/BareunDotumPro1.ttf") format("truetype");
+}
