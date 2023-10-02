@@ -1,5 +1,5 @@
 const App = () => {
-  return <>ads f</>;
+  return <>Ohwonaje resume</>;
 };
 
 export default App;
