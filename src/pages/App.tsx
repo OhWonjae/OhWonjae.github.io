@@ -1,11 +1,11 @@
-import '@/styles/main.scss';
+import '@/styles/common/_base.scss';
+import { Container } from '@/layout/container';
+import { Card } from '@/components/card';
 const App = () => {
   return (
-    <>
-      <div className={'d1'}>Ohwonaje resume1</div>
-      <div className={'d2'}>Ohwonaje resume2</div>
-      <div className={'d3'}>Ohwonaje resume3</div>
-    </>
+    <Container>
+      <Card />
+    </Container>
   );
 };
 

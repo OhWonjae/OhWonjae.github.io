@@ -1,0 +1,24 @@
+.card {
+  background-color: var(--primary-color);
+  height:350px;
+  padding:0 80px;
+
+  .card-image {
+    background-color: #1c90fb;
+    float: left;
+    height:100%;
+    width:40%;
+
+
+  }
+
+  .card-detail {
+    background-color: #9b1b1e;
+    float:left;
+    height:100%;
+    width:60%;
+
+
+  }
+
+}
