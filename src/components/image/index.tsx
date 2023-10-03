@@ -7,8 +7,6 @@ interface ImageTypes {
   alt: string;
 }
 export const Image = ({ height, width, alt, src }: ImageTypes) => {
-  트;
-  // loading
   const [isLoading, setIsLoading] = useState(true);
   const [h, setH] = useState(height);
   const [w, setW] = useState(width);
