@@ -1,4 +1,4 @@
-import React, { ReactNode, SyntheticEvent, useState, Suspense } from 'react';
+import React, { SyntheticEvent, useState, Suspense, useEffect } from 'react';
 import './Image.scss';
 interface ImageTypes {
   height: number;
@@ -10,21 +10,35 @@ export const Image = ({ height, width, alt, src }: ImageTypes) => {
   const [isLoading, setIsLoading] = useState(true);
   const [h, setH] = useState(height);
   const [w, setW] = useState(width);
+  const [originW, setOriginW] = useState(width);
+  const [originH, setOriginH] = useState(height);
   const onLoad = (e: SyntheticEvent<HTMLImageElement>) => {
     const element = e.currentTarget;
-    if (element.naturalHeight >= element.naturalWidth) {
-      const nw = (height * element.naturalWidth) / element.naturalHeight;
+    calcSize(element.naturalHeight, element.naturalWidth);
+  };
+  const calcSize = (naturalHeight: number, naturalWidth: number) => {
+    setOriginW(naturalWidth);
+    setOriginH(naturalHeight);
+    if (naturalHeight >= naturalWidth) {
+      const nw = (height * naturalWidth) / naturalHeight;
       const nh = height;
       setW(Math.floor(nw));
       setH(Math.floor(nh));
     } else {
       const nw = width;
-      const nh = (width * element.naturalHeight) / element.naturalWidth;
+      const nh = (width * naturalHeight) / naturalWidth;
       setW(Math.floor(nw));
       setH(Math.floor(nh));
     }
     setIsLoading(false);
   };
+  useEffect(() => {
+    setH(height);
+    setW(width);
+    if (originH && originW) {
+      calcSize(originH, originW);
+    }
+  }, [height, width, originW, originH]);
 
   return (
     <>

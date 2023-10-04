@@ -1,0 +1,20 @@
+// 기기별 최대 width px
+$mobile-max: 767px;
+$tablet-max: 1023px;
+
+// 기기별 최소 width px
+$mobile-min: 320px;
+$tablet-min: 768px;
+$desktop-min: 1024px;
+
+@mixin tablet {
+  @media (max-width: #{$tablet-max}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-max}) {
+    @content;
+  }
+}
