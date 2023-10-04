@@ -1,24 +1,35 @@
+@import '@/styles/common/mixins';
+
 .card {
   background-color: var(--primary-color);
-  height:350px;
-  padding:0 80px;
+  height: 50%;
 
   .card-image {
     background-color: #1c90fb;
     float: left;
-    height:100%;
+    height: 100%;
     width:40%;
-
 
   }
 
   .card-detail {
     background-color: #9b1b1e;
     float:left;
-    height:100%;
+    height: 100%;
     width:60%;
+  }
 
+  @include mobile {
 
+    .card-image {
+      float: none;
+      width:auto;
+    }
+
+    .card-detail {
+      float: none;
+      width:auto;
+    }
   }
 
 }
