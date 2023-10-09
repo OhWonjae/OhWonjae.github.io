@@ -1,0 +1,35 @@
+@import '@/styles/common/mixins';
+
+
+.card-detail-name {
+  font-size: 8rem;
+  margin-left:3%;
+}
+
+.card-detail-info {
+  font-size: 2rem;
+  margin-bottom: 5%;
+  margin-left:3%;
+  margin-top: 5%;
+
+  img {
+    height:30px;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 30px;
+
+    @include tablet {
+      height:20px;
+      width:20px;
+    }
+
+    @include mobile {
+      height:15px;
+      width: 15px;
+    }
+  }
+
+
+}
+
+

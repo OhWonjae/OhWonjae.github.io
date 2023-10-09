@@ -1,12 +1,12 @@
 import React, { SyntheticEvent, useState, Suspense, useEffect } from 'react';
-import './Image.scss';
+import './profile-Image.scss';
 interface ImageTypes {
   height: number;
   width: number;
   src: string;
   alt: string;
 }
-export const Image = ({ height, width, alt, src }: ImageTypes) => {
+export const ProfileImage = ({ height, width, alt, src }: ImageTypes) => {
   const [isLoading, setIsLoading] = useState(true);
   const [h, setH] = useState(height);
   const [w, setW] = useState(width);
@@ -39,10 +39,10 @@ export const Image = ({ height, width, alt, src }: ImageTypes) => {
       calcSize(originH, originW);
     }
   }, [height, width, originW, originH]);
-
   return (
     <>
       <img
+        className={'profile-img'}
         src={src}
         style={{ width: w, height: h, opacity: isLoading ? 0 : 1 }}
         onLoad={onLoad}
