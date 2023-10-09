@@ -3,7 +3,7 @@ import './card.scss';
 import { CardDetail } from './card-detail';
 import { ResumeContext } from '@/context/resumeContext';
 
-export const Card = () => {
+export const ProfileCard = () => {
   const resumeData = useContext(ResumeContext);
   return (
     <div className={'card'}>

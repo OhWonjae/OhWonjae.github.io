@@ -1,11 +1,12 @@
 export interface projectTypes {
   title: string;
+  url?: string;
   startPeriod: string;
   endPeriod: string;
-  detail: string[];
+  details: string[];
 }
 
-export interface ExperienceTypes {
+export interface CompanyTypes {
   companyName: string;
   companyIntroduction: string;
   startPeriod: string;
@@ -21,5 +22,7 @@ export interface ResumeTypes {
   github: string;
   blog: string;
   introduce: string;
-  experience: ExperienceTypes;
+  experience: CompanyTypes[];
+  personalProjects: projectTypes[];
+  etc: projectTypes[];
 }

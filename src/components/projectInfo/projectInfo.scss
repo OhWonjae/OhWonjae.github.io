@@ -1,0 +1,30 @@
+.project {
+  line-height: 2rem;
+  margin : 3% 0;
+  white-space: pre-wrap;
+
+  .project-title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .project-detail {
+    font-size: 1.5rem;
+    list-style-position: inside;
+    list-style-type: disc;
+    margin : 2% 0;
+    padding-left: 1em;
+    text-indent: -1em;
+  }
+
+  .project-detail-item {
+    font-size: 1.5rem;
+    margin : 10px 0;
+  }
+
+  .project-url {
+    color: #5e6b7b;
+    margin-top: 10px;
+  }
+
+}
