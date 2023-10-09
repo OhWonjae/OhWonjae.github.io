@@ -1,12 +1,18 @@
 import '@/styles/common/_base.scss';
 import { Container } from '@/layout/container';
-import { Card } from '@/components/card';
-import { Introduce } from '@/layout/Introduce';
+import { ProfileCard } from '@/components/profile-card';
+import { Introduce } from '@/components/introduce';
+import { Experience } from '@/components/experience';
+import { PersonalProjects } from '@/components/personal-projects';
+import { ETC } from '@/components/etc';
 const App = () => {
   return (
     <Container>
-      <Card />
+      <ProfileCard />
       <Introduce />
+      <Experience />
+      <PersonalProjects />
+      <ETC />
     </Container>
   );
 };

@@ -8,15 +8,15 @@
   "introduce": "안녕하세요. 2년차 프론트엔드 개발자 오원재입니다.\n한 그루의 나무보다 넓은 관점의 숲을 보기를 좋아합니다.\n2년간 리액트로 B2B 이커머스 사이트의 초기세팅부터 런칭까지 진행했습니다.",
   "experience": [{
     "companyName": "더존비앤에프",
-    "companyIntroduction": "",
+    "companyIntroduction": "B2B 이커머스 플랫폼",
     "startPeriod": "202108",
     "endPeriod": "",
     "projects":[
       {
         "title": "백오피스 사이트 개발",
-        "startPeriod" : "202308",
+        "startPeriod" : "202108",
         "endPeriod" : "202208",
-        "detail": [
+        "details": [
           "React의 SPA 방식 사용",
           "Yarn Workspaces의 모노레포 구조를 적용하여 개발시 생산성 높임 (공동 참여)",
           "Webpack의 ModuleFederation 기능으로 도메인 메뉴별 Micro-Frontend 아키텍쳐를 적용하여 모노레포가 가지는 의존성 문제 해결 (공동 참여)",
@@ -30,7 +30,41 @@
       {
         "title": "프론트 사이트 개발",
         "startPeriod" : "202208",
-        "endPeriod" : "202308"
+        "endPeriod" : "202308",
+        "url": "https://theporterzone.com",
+        "details": [
+          "next.js 와 nest.js(BFF) 모노레포 구조 적용하여 개발 편의성 높임",
+          "nest.js에서 사용하기 위해 모노레포 내부의 공통 타입 패키지 빌드파일을 cjs와 esm방식 따로 적용",
+          "기존의 깃랩 Event Trigger에 따른 불필요한 배포 프로세스 대신에 젠킨스 Job 직접 빌드하도록 수정하여 젠킨스 용량 과부화 이슈 해결. 에러에 대비하여 husky 적용 ",
+          "1차 배포 최적화 - Yarn Berry의 pnp모드 적용하여 next.js, nest.js 각각 전체 배포시간 60% 단축 (기존에 모노레포로 인한 리소스 비대화로 약 8분 가량 걸렸던 작업이 3~4분대로 단축)",
+          "2차 배포 최적화 - 개발계 서버 이슈로 인한 프론트 배포파일 용량 최적화 요청 → next.js의 경우 standalone 방식으로 배포진행 (기존 이미지 용량 700mb → 120mb 로 단축)",
+          "정산, 선물하기 보관함,할당, 발송 페이지 및 BFF 개발"
+        ]
       }
-  ]}]
+  ]}],
+  "personalProjects": [
+  {
+    "title": "Sprite Generator",
+    "startPeriod" : "202309",
+    "endPeriod" : "202310",
+    "url": "https://github.com/OhWonjae/SpriteGenerator",
+    "details": [
+      "해당 페이지에서 사진을 업로드하면 바로 Sprite 미리보기 및 다운로드가 가능하고 Sprite 적용을 위한 StyleSheet 확인 가능",
+      "Sprite에 이미지를 효율적으로 쌓기 위해 MaxRects 알고리즘 구현",
+      "React 18v / 순수 CSS / Typescript / Jest",
+      "Jest 테스트 커버리지 90% 달성",
+      "AWS S3 / AWS CLOUD FRONT 로 배포 (https://d2nsgx8f0wx4a.cloudfront.net)"
+    ]
+  }
+],
+  "etc": [
+    {
+      "title": "강원대학교 컴퓨터 공학 학사 졸업",
+      "endPeriod" : "202111"
+    },
+    {
+      "title": "정보처리기사",
+      "endPeriod" : "20200828"
+    }
+  ]
 }
