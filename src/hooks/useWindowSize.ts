@@ -8,7 +8,7 @@ export const useGetComputedStyleWhenWindowReSize = (element?: HTMLElement) => {
       const computedStyle = window.getComputedStyle(element);
       setStyle(computedStyle);
     }
-  }, 500);
+  }, 200);
 
   useEffect(() => {
     handleReSize();

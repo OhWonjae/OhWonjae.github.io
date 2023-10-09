@@ -1,0 +1,36 @@
+{
+  "name": "오원재",
+  "profileImg": "public/assets/profile.png",
+  "email": "dhdnjswo5000@naver.com",
+  "phone": "010-2423-7236",
+  "github": "https://github.com/OhWonjae",
+  "blog": "https://dhdnjswo5000.tistory.com/",
+  "introduce": "안녕하세요. 2년차 프론트엔드 개발자 오원재입니다.\n한 그루의 나무보다 넓은 관점의 숲을 보기를 좋아합니다.\n2년간 리액트로 B2B 이커머스 사이트의 초기세팅부터 런칭까지 진행했습니다.",
+  "experience": [{
+    "companyName": "더존비앤에프",
+    "companyIntroduction": "",
+    "startPeriod": "202108",
+    "endPeriod": "",
+    "projects":[
+      {
+        "title": "백오피스 사이트 개발",
+        "startPeriod" : "202308",
+        "endPeriod" : "202208",
+        "detail": [
+          "React의 SPA 방식 사용",
+          "Yarn Workspaces의 모노레포 구조를 적용하여 개발시 생산성 높임 (공동 참여)",
+          "Webpack의 ModuleFederation 기능으로 도메인 메뉴별 Micro-Frontend 아키텍쳐를 적용하여 모노레포가 가지는 의존성 문제 해결 (공동 참여)",
+          "배포시 Jenkins 파이프라인을 통한 CICD 프로세스 구축 (gitlab, docker, gitOps, argoCD) (공동 참여)",
+          "디자인 시스템 공통 UI 라이브러리를 백오피스에 적용하여 테스트를 하기 위한 Linking 방식 사용",
+          "상태 관리를 위해 MobX를 프로젝트에 적용",
+          "페이지네이션, Z-Indexer, PopOver 등의 공통 라이브러리 개발",
+          "정산, 게시판, 기본 정보 관리 도메인 페이지 개발"
+        ]
+      },
+      {
+        "title": "프론트 사이트 개발",
+        "startPeriod" : "202208",
+        "endPeriod" : "202308"
+      }
+  ]}]
+}
