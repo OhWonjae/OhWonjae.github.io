@@ -5,7 +5,7 @@
 
   .card-image {
     float: left;
-    width:40%;
+    width:30%;
 
     .profile-img {
       height:100%;
@@ -19,7 +19,7 @@
   .card-detail {
     float:left;
     height: 100%;
-    width:60%;
+    width:70%;
   }
 
   @include mobile {
