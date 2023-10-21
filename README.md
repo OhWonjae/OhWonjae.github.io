@@ -10,6 +10,9 @@ Desktop , Tablet, Mobile에 대해 각각 반응형으로 개발하였습니다.
 # Figma를 이용한 반응형 레이아웃 초기 와이어프레임 설계
 <img width="1315" alt="image" src="https://github.com/OhWonjae/OhWonjae.github.io/assets/43844233/71a4ebd7-c335-4d32-86ce-51c76d340111">
 
+# 반응형 웹 적용
+Blog - https://dhdnjswo5000.tistory.com/75
+
 ## 기술 스택
 
 > React v18
